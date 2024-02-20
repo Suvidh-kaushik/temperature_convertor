@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Temperature Converter Website using html, css & JavaScript</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style_css.css" />
+
+    <!-- box icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <div class="container">
+        <div class="temperature-converter">
+
+         <h1 class="title">Temperature Converter</h1>
+
+
+            <!-- input field -->
+            <form>
+            <div class="degree-type">
+                <!-- for degrees -->
+              <div class="degree-field">
+                <label for="degree"></label>
+                <input type="number" name="degree" id="degree"/>
+              </div>
+   
+              <!-- for option selection -->
+              <div class="temp-field">
+                <label for="temp-type1">Type</label>
+                <select name="temperatures" onchange="myFunction()" id="temp-type1" autocomplete="on">
+                  <option id="fahrenheit" value="fahrenheit">Fahrenheit</option>
+                  <option id="kelvin" value="kelvin">Kelvin</option>
+                  <option id="celcius" value="celcius">Celcius</option>
+                </select>
+              </div>
+            </div>
+
+            <div id="mid_text"><img src="https://as2.ftcdn.net/v2/jpg/00/75/69/13/1000_F_75691334_T2403h6dyfzbQUKbY3D0F7UcCjMPDYYW.jpg" width="40px" height="40"/></div>
+            <!-- input field 2-->
+            <div class="degree-type">
+              <!-- for degrees -->
+            <div class="degree-field">
+              <p id="result"></p>
+            </div>
+ 
+            <!-- for option selection -->
+            <div class="temp-field2">
+              <label for="temp-type2">Type</label>
+              <select name="temperatures" id="temp-type2" autocomplete="on">
+                <option id="fahrenheit" value="fahrenheit">Fahrenheit</option>
+                <option id="kelvin" value="kelvin">Kelvin</option>
+                <option id="celcius" value="celcius">Celcius</option>
+              </select>
+            </div>
+          </form>
+          </div>
+
+          <button id="convert-btn" onclick="conversion()">Convert</button>            
+        </div>
+      </div>
+    <script src="new.js"></script>
+  </body>
+</html>
